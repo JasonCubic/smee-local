@@ -1,0 +1,11 @@
+---
+  version: '3.8'
+  services:
+    smee-local:
+      build:
+        context: .
+        dockerfile: ./Dockerfile
+      container_name: smee-local
+      environment:
+        - SMEE_SOURCE=
+        - SMEE_TARGET=
